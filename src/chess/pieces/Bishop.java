@@ -51,7 +51,7 @@ public class Bishop extends ChessPiece {// peça torre
 		if(getBoard().positionExists(p)&& isThereOpponentPiece(p)) {
 			mat [p.getRow()][p.getColumn()] = true;
 		}
-		//sudoes
+		//sudoeste
 		p.setValues(position.getRow() + 1, position.getColumn() - 1);
 		while(getBoard().positionExists(p)&& !getBoard().thereIsAPiece(p)) {
 			mat [p.getRow()][p.getColumn()] = true;
